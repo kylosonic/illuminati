@@ -1,36 +1,92 @@
 import React from 'react';
-import { ShieldCheck, Zap, Ghost, EyeOff, Terminal, ChevronRight, Crosshair } from 'lucide-react';
+import { ShieldCheck, Zap, Ghost, EyeOff, Terminal, ChevronRight, Crosshair, Skull, Siren, Radio, Flame, Bug, BrainCircuit, Radar, Droplets, Webhook } from 'lucide-react';
 
 const Directives = () => {
   const directives = [
     {
       id: 'OP-ECLIPSE',
       title: 'OP-ECLIPSE',
-      description: 'Engineering artificial grid failure to test urban dependency metrics.',
+      description: 'Engineering synchronized grid failure across six continents to stress-test urban population dependency and panic thresholds.',
       status: 'PHASED_ROLLOUT',
       icon: Zap
     },
     {
       id: 'OP-MOCKINGBIRD',
       title: 'OP-MOCKINGBIRD V2.0',
-      description: 'Injecting synthesized partisan outrage into digital social networks to maintain public division.',
+      description: 'Self-replicating partisan outrage algorithms deployed across 4,200 social media nodes. Public division index at 94.6%.',
       status: 'SELF_SUSTAINING',
       icon: Ghost
     },
     {
       id: 'OP-PROMETHEUS',
       title: 'OP-PROMETHEUS',
-      description: 'Suppressing breakthrough zero-point energy patents to maintain fossil-fuel economic leverage.',
+      description: 'Suppressing 31 breakthrough energy patents. Inventors relocated to containment. Fossil-fuel leverage maintained through 2040.',
       status: 'TARGETED',
       icon: EyeOff
     },
     {
       id: 'PROTOCOL-CASSANDRA',
       title: 'PROTOCOL CASSANDRA',
-      description: 'Discrediting whistleblowers via algorithmically generated deepfake campaigns.',
+      description: 'Deepfake assassination of 12 whistleblower reputations. Public trust index in alternative media reduced to 11%.',
       status: 'ACTIVE',
       icon: ShieldCheck
-    }
+    },
+    {
+      id: 'OP-LEVIATHAN',
+      title: 'OP-LEVIATHAN',
+      description: 'Contaminating aquifer systems in 66 regions with nano-particulate tracking compounds. Population tagging at molecular level.',
+      status: 'PHASED_ROLLOUT',
+      icon: Droplets
+    },
+    {
+      id: 'OP-BABEL',
+      title: 'OP-BABEL',
+      description: 'Deploying linguistic fragmentation algorithms into educational curricula. Cross-generational communication breakdown ETA: 2031.',
+      status: 'SELF_SUSTAINING',
+      icon: BrainCircuit
+    },
+    {
+      id: 'OP-SKINWALKER',
+      title: 'OP-SKINWALKER',
+      description: 'Infiltrating 666 government positions across 44 nations with pre-conditioned assets. Identity replacement protocol active.',
+      status: 'ACTIVE',
+      icon: Bug
+    },
+    {
+      id: 'PROTOCOL-LAZARUS',
+      title: 'PROTOCOL LAZARUS',
+      description: 'Genetic resurrection program using archived bloodline sequences. Six subjects reanimated. Cognitive baseline: hostile.',
+      status: 'QUARANTINED',
+      icon: Skull
+    },
+    {
+      id: 'OP-SIREN',
+      title: 'OP-SIREN',
+      description: 'Broadcasting subliminal 6.66Hz frequency through commercial music distribution. Compliance uptick: 23% in target demographics.',
+      status: 'SELF_SUSTAINING',
+      icon: Radio
+    },
+    {
+      id: 'OP-MOLOCH',
+      title: 'OP-MOLOCH',
+      description: 'Redirecting $6.66 trillion in global aid to Tier-1 asset accumulation. Poverty index artificially sustained in 90 nations.',
+      status: 'ACTIVE',
+      icon: Flame
+    },
+    {
+      id: 'OP-PANOPTICON',
+      title: 'OP-PANOPTICON',
+      description: 'Facial recognition deployed across 1.2 billion surveillance endpoints. Biometric database cross-referenced with bloodline registry.',
+      status: 'PHASED_ROLLOUT',
+      icon: Radar
+    },
+    {
+      id: 'PROTOCOL-OMEGA',
+      title: 'PROTOCOL OMEGA',
+      description: 'Final contingency. Total narrative collapse and reset. Activation requires three Architect keys and blood-sigil authentication.',
+      status: 'QUARANTINED',
+      icon: Webhook
+    },
   ];
 
   return (

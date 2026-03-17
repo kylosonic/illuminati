@@ -5,10 +5,24 @@ const Archives = () => {
   const [selectedFile, setSelectedFile] = useState(null);
 
   const files = [
-    { id: 1, name: 'Architectural_Blueprints_Civilization_v4.pdf', shortName: 'Blueprints_Civ_v4.pdf', type: 'doc', date: 'BCE_4402', status: 'UNREDACTED' },
-    { id: 2, name: 'Sociological_Matrix_Recalibration.data', shortName: 'Matrix_Recal.data', type: 'bin', date: '2024.11.12', status: 'ACTIVE' },
-    { id: 3, name: 'Historical_Timeline_Correction_Log.txt', shortName: 'Timeline_Corr.txt', type: 'doc', date: '1914.06.28', status: 'LOCKED' },
-    { id: 4, name: 'Asset_Transfer_Protocol_Alpha.key', shortName: 'Transfer_Alpha.key', type: 'key', date: '2026.03.16', status: 'ENCRYPTED' },
+    { id: 1, name: 'Sumerian_Binding_Ritual_Tablet_Zero.clay', shortName: 'Binding_Tablet_0.clay', type: 'bin', date: 'BCE_6660', status: 'LOCKED' },
+    { id: 2, name: 'Architectural_Blueprints_Civilization_v4.pdf', shortName: 'Blueprints_Civ_v4.pdf', type: 'doc', date: 'BCE_4402', status: 'UNREDACTED' },
+    { id: 3, name: 'Bloodline_Registry_Nephilim_Descendants.gen', shortName: 'Nephilim_Registry.gen', type: 'bin', date: 'BCE_3100', status: 'ENCRYPTED' },
+    { id: 4, name: 'Solomon_Key_66_Seals_of_Binding.hex', shortName: 'Solomon_66_Seals.hex', type: 'key', date: 'BCE_0966', status: 'LOCKED' },
+    { id: 5, name: 'Roman_Collapse_Internal_Directive.txt', shortName: 'Rome_Collapse.txt', type: 'doc', date: '0476.09.04', status: 'UNREDACTED' },
+    { id: 6, name: 'Black_Plague_Deployment_Schema_EU.data', shortName: 'Plague_Schema.data', type: 'bin', date: '1347.10.01', status: 'ACTIVE' },
+    { id: 7, name: 'Great_Fire_London_Sector_666_Report.log', shortName: 'Fire_666_Report.log', type: 'doc', date: '1666.09.02', status: 'UNREDACTED' },
+    { id: 8, name: 'Bavarian_Order_Charter_Original.pdf', shortName: 'Bavarian_Charter.pdf', type: 'doc', date: '1776.05.01', status: 'UNREDACTED' },
+    { id: 9, name: 'Archduke_Assassination_Pre-Authorization.key', shortName: 'Archduke_PreAuth.key', type: 'key', date: '1914.06.28', status: 'LOCKED' },
+    { id: 10, name: 'Bretton_Woods_Shadow_Amendment.pdf', shortName: 'Bretton_Shadow.pdf', type: 'doc', date: '1944.07.22', status: 'ACTIVE' },
+    { id: 11, name: 'MKUltra_Phase_VI_Subliminal_Grid.bin', shortName: 'MKUltra_VI.bin', type: 'bin', date: '1966.06.06', status: 'ENCRYPTED' },
+    { id: 12, name: 'Human_Genome_Tampering_Protocol_v6.6.data', shortName: 'Genome_v6.6.data', type: 'bin', date: '1990.10.01', status: 'ACTIVE' },
+    { id: 13, name: 'Sociological_Matrix_Recalibration.data', shortName: 'Matrix_Recal.data', type: 'bin', date: '2001.09.10', status: 'ACTIVE' },
+    { id: 14, name: 'HAARP_Frequency_Modulation_666Hz.wav', shortName: 'HAARP_666Hz.wav', type: 'bin', date: '2010.01.12', status: 'ENCRYPTED' },
+    { id: 15, name: 'Pandemic_Narrative_Architecture_v3.pdf', shortName: 'Pandemic_v3.pdf', type: 'doc', date: '2019.08.15', status: 'ACTIVE' },
+    { id: 16, name: 'Digital_Currency_Enslavement_Matrix.key', shortName: 'CBDC_Matrix.key', type: 'key', date: '2024.11.12', status: 'ENCRYPTED' },
+    { id: 17, name: 'Predictive_Collapse_Algorithm_2030.exe', shortName: 'Collapse_2030.exe', type: 'bin', date: '2026.06.06', status: 'LOCKED' },
+    { id: 18, name: 'Entity_666_Containment_Breach_Log.err', shortName: 'Entity_666.err', type: 'bin', date: '2027.06.66', status: 'LOCKED' },
   ];
 
   return (

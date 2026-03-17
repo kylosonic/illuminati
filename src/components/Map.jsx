@@ -5,19 +5,27 @@ const Map = () => {
   const [hoveredSector, setHoveredSector] = useState(null);
   
   const sectors = [
-    { id: 'NULL-A', name: 'SECTOR NULL-A', region: 'North America', desc: 'Primary Media Node / Technological Vanguard', coords: '220,120' },
-    { id: 'NULL-B', name: 'SECTOR NULL-B', region: 'Western Europe', desc: 'Legislative Anchor / Historical Matrix', coords: '480,120' },
-    { id: 'TESSERACT', name: 'SECTOR TESSERACT', region: 'Asia-Pacific', desc: 'Manufacturing Substrate / Population Density Core', coords: '780,180' },
-    { id: 'AEGIS', name: 'SECTOR AEGIS', region: 'Eastern Europe/Northern Asia', desc: 'Energy Extraction / Strategic Buffer Zone', coords: '620,100' },
-    { id: 'CRUCIBLE', name: 'SECTOR CRUCIBLE', region: 'Middle East/North Africa', desc: 'Controlled Volatility / Resource Tension Point', coords: '520,220' },
-    { id: 'GENESIS', name: 'SECTOR GENESIS', region: 'Sub-Saharan Africa', desc: 'Unexploited Mineral Reserves / Future Expansion Grid', coords: '540,350' },
-    { id: 'LEVIATHAN', name: 'SECTOR LEVIATHAN', region: 'South America', desc: 'Ecological Asset Vault / Agricultural Sub-system', coords: '300,350' },
+    { id: 'NULL-A', name: 'SECTOR NULL-A', region: 'North America', desc: 'Primary media control node. Technological surveillance vanguard. Population sedation index: 96.2%.', coords: '220,120' },
+    { id: 'NULL-B', name: 'SECTOR NULL-B', region: 'Western Europe', desc: 'Legislative manipulation anchor. Historical narrative falsification center. 1,400 assets embedded.', coords: '480,120' },
+    { id: 'TESSERACT', name: 'SECTOR TESSERACT', region: 'East Asia', desc: 'Manufacturing substrate. Population density exploitation core. Social credit prototype zone.', coords: '780,180' },
+    { id: 'AEGIS', name: 'SECTOR AEGIS', region: 'Russia / Northern Asia', desc: 'Energy extraction monopoly. Strategic buffer zone. Nuclear dead-hand integration active.', coords: '620,80' },
+    { id: 'CRUCIBLE', name: 'SECTOR CRUCIBLE', region: 'Middle East', desc: 'Controlled volatility engine. Perpetual conflict sustainer. Resource tension maintained at 88%.', coords: '540,200' },
+    { id: 'GENESIS', name: 'SECTOR GENESIS', region: 'Sub-Saharan Africa', desc: 'Unexploited mineral reserves. Experimental pharmaceutical deployment zone. Bloodline harvesting active.', coords: '520,330' },
+    { id: 'LEVIATHAN', name: 'SECTOR LEVIATHAN', region: 'South America', desc: 'Ecological asset vault. Underground tunnel network HQ. Jungle laboratory complex operational.', coords: '300,330' },
+    { id: 'NEPHILIM', name: 'SECTOR NEPHILIM', region: 'Central Asia', desc: 'Ancient artifact excavation zone. Six sealed gates monitored continuously. Seismic anomalies increasing.', coords: '660,160' },
+    { id: 'BABEL', name: 'SECTOR BABEL', region: 'South Asia', desc: 'Linguistic fragmentation testing ground. 1.4 billion subjects under cognitive frequency modulation.', coords: '710,230' },
+    { id: 'STYX', name: 'SECTOR STYX', region: 'Oceania / Pacific', desc: 'Deep-ocean facility network. Submarine cable interception hub. Underwater signal array broadcasting 6.66Hz.', coords: '850,340' },
+    { id: 'MOLOCH', name: 'SECTOR MOLOCH', region: 'Central America', desc: 'Transit corridor for unmarked cargo. Underground ritual site maintenance. Pyramid frequency resonance active.', coords: '240,240' },
+    { id: 'VOID-0', name: 'SECTOR VOID-0', region: 'Antarctica', desc: 'Subglacial research complex. Pre-human technology vault. Thermal anomaly 6.66°C above baseline detected.', coords: '500,450' },
+    { id: '666', name: 'SECTOR 666', region: '[COORDINATES EXPUNGED]', desc: 'THE THRESHOLD. Dimensional boundary monitoring station. Containment integrity at 66.6%. DO NOT ENGAGE.', coords: '500,250' },
   ];
 
   const metrics = [
-    { label: 'COGNITIVE_DISSONANCE', value: 78.4, detail: 'Optimal suppressing.' },
-    { label: 'NARRATIVE_SATURATION', value: 92.1, detail: 'Absolute coverage.' },
-    { label: 'DISTRACTION_QUOTIENT', value: 88, detail: 'Loop sustained.' },
+    { label: 'COGNITIVE_DISSONANCE', value: 78.4, detail: 'Optimal suppression achieved.' },
+    { label: 'NARRATIVE_SATURATION', value: 92.1, detail: 'Absolute media coverage.' },
+    { label: 'DISTRACTION_QUOTIENT', value: 88, detail: 'Behavioral loop sustained.' },
+    { label: 'OBEDIENCE_INDEX', value: 66.6, detail: 'Threshold compliance nominal.' },
+    { label: 'BLOODLINE_PURITY', value: 99.7, detail: 'Lineage integrity confirmed.' },
   ];
 
   return (
