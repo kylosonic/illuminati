@@ -141,11 +141,11 @@ const Gateway = ({ onAuthorize }) => {
            
           <button 
             onClick={handleInitialize}
-            className="group relative px-6 sm:px-12 py-4 sm:py-6 border border-border-blueprint text-inscription text-[9px] sm:text-xs hover:border-accent-gold transition-all duration-1000 overflow-hidden animate-glow-pulse"
+            className="group relative px-8 sm:px-12 py-5 sm:py-6 border border-border-blueprint text-inscription text-[10px] sm:text-xs hover:border-accent-gold transition-all duration-1000 overflow-hidden animate-glow-pulse min-h-[48px]"
           >
             <div className="absolute inset-0 bg-accent-gold/5 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-1000"></div>
             <span className="relative z-10 flex items-center gap-3 sm:gap-4 text-accent-gold/80 group-hover:text-accent-gold">
-              Enter The Inner Sanctum <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-2 transition-transform duration-700" strokeWidth={1} />
+              Enter The Inner Sanctum <ArrowRight className="w-4 h-4 sm:w-4 sm:h-4 group-hover:translate-x-2 transition-transform duration-700" strokeWidth={1} />
             </span>
           </button>
 
@@ -198,7 +198,7 @@ const Gateway = ({ onAuthorize }) => {
                   type="password"
                   value={cipher}
                   onChange={(e) => setCipher(e.target.value)}
-                  className="w-full bg-transparent border-b border-border-blueprint text-accent-gold text-center py-4 sm:py-8 text-3xl sm:text-5xl font-mono focus:outline-none focus:border-accent-gold transition-all duration-1000 placeholder:text-white/5 tracking-[0.3em] sm:tracking-[0.6em]"
+                  className="w-full bg-transparent border-b border-border-blueprint text-accent-gold text-center py-5 sm:py-8 text-3xl sm:text-5xl font-mono focus:outline-none focus:border-accent-gold transition-all duration-1000 placeholder:text-white/5 tracking-[0.3em] sm:tracking-[0.6em] min-h-[52px]"
                   placeholder="••••••"
                   disabled={status === 'SCANNING' || status === 'AUTHORIZED'}
                 />
@@ -209,7 +209,7 @@ const Gateway = ({ onAuthorize }) => {
                 <button
                   type="submit"
                   disabled={status !== 'IDLE'}
-                  className={`w-full py-4 sm:py-6 bg-bg-void border border-border-blueprint text-inscription text-[10px] sm:text-[11px] font-black hover:border-accent-gold hover:text-accent-gold transition-all duration-700 relative overflow-hidden group ${status !== 'IDLE' ? 'opacity-50' : ''}`}
+                  className={`w-full py-5 sm:py-6 bg-bg-void border border-border-blueprint text-inscription text-[11px] sm:text-[11px] font-black hover:border-accent-gold hover:text-accent-gold transition-all duration-700 relative overflow-hidden group min-h-[48px] ${status !== 'IDLE' ? 'opacity-50' : ''}`}
                 >
                   <div className="absolute inset-x-0 top-0 h-px bg-accent-gold/20"></div>
                   {status === 'IDLE' ? 'INITIATE NEURAL HANDSHAKE' : status}

@@ -69,11 +69,13 @@ const Map = () => {
                   onMouseLeave={() => setHoveredSector(null)}
                   onClick={() => setHoveredSector(hoveredSector?.id === sector.id ? null : sector)}
                 >
+                  {/* Invisible touch target */}
+                  <circle cx={cx} cy={cy} r="30" className="fill-transparent" />
                   {isActive && (
                     <circle cx={cx} cy={cy} r="25" className="fill-none stroke-accent-gold/20" strokeWidth="1" style={{ animation: 'pulse-ring 1.5s ease-out infinite' }} />
                   )}
-                  <circle cx={cx} cy={cy} r={isActive ? "18" : "10"} className="fill-accent-gold/5 stroke-accent-gold/10 transition-all duration-700" />
-                  <circle cx={cx} cy={cy} r="3" className={`fill-accent-gold transition-all duration-500 ${isActive ? 'scale-[3]' : ''}`} style={isActive ? { filter: 'drop-shadow(0 0 10px rgba(212,175,55,0.8))' } : {}} />
+                  <circle cx={cx} cy={cy} r={isActive ? "18" : "12"} className="fill-accent-gold/5 stroke-accent-gold/10 transition-all duration-700" />
+                  <circle cx={cx} cy={cy} r="4" className={`fill-accent-gold transition-all duration-500 ${isActive ? 'scale-[3]' : ''}`} style={isActive ? { filter: 'drop-shadow(0 0 10px rgba(212,175,55,0.8))' } : {}} />
                   
                   <text 
                     x={cx} 

@@ -121,10 +121,10 @@ const Communications = () => {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder="Speak..."
-              className="w-full bg-bg-void border border-border-blueprint rounded-sm px-3 sm:px-6 py-3 sm:py-4 text-xs sm:text-sm font-mono text-white focus:outline-none focus:border-accent-gold/40 placeholder:text-white/10 uppercase tracking-[0.1em] sm:tracking-[0.2em] transition-all duration-[1s] focus:shadow-[inset_0_0_20px_rgba(212,175,55,0.05)]"
+              className="w-full bg-bg-void border border-border-blueprint rounded-sm px-4 sm:px-6 py-4 sm:py-4 text-sm sm:text-sm font-mono text-white focus:outline-none focus:border-accent-gold/40 placeholder:text-white/10 uppercase tracking-[0.1em] sm:tracking-[0.2em] transition-all duration-[1s] focus:shadow-[inset_0_0_20px_rgba(212,175,55,0.05)] min-h-[48px]"
             />
           </div>
-          <button type="submit" className="w-12 sm:w-20 lg:w-32 bg-bg-void border border-border-blueprint text-inscription text-[10px] sm:text-[11px] font-black hover:border-accent-gold hover:text-accent-gold transition-all duration-700 relative overflow-hidden shrink-0 flex items-center justify-center">
+          <button type="submit" className="w-14 sm:w-20 lg:w-32 bg-bg-void border border-border-blueprint text-inscription text-[10px] sm:text-[11px] font-black hover:border-accent-gold hover:text-accent-gold transition-all duration-700 relative overflow-hidden shrink-0 flex items-center justify-center min-h-[48px] min-w-[48px]">
             <ChevronRight className="w-4 h-4" strokeWidth={1.5} />
           </button>
         </form>

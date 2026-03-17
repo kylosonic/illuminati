@@ -67,7 +67,7 @@ const Dashboard = ({ onLogout }) => {
 
       {/* Mobile Menu Button */}
       <button 
-        className="fixed top-4 left-4 z-50 p-2.5 bg-bg-obsidian border border-border-blueprint rounded-sm lg:hidden hover:border-accent-gold transition-colors"
+        className="fixed top-3 left-3 z-50 p-3 bg-bg-obsidian border border-border-blueprint rounded-sm lg:hidden hover:border-accent-gold transition-colors min-w-[48px] min-h-[48px] flex items-center justify-center"
         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
       >
         {isMobileMenuOpen ? <X className="w-5 h-5 text-accent-gold" /> : <Menu className="w-5 h-5 text-dim" />}
@@ -109,7 +109,7 @@ const Dashboard = ({ onLogout }) => {
             <button
               key={item.id}
               onClick={() => { setActiveTab(item.id); setIsMobileMenuOpen(false); }}
-              className={`w-full group relative flex items-center gap-4 lg:gap-6 p-3 lg:p-4 transition-all duration-700 rounded-sm overflow-hidden
+              className={`w-full group relative flex items-center gap-4 lg:gap-6 p-4 lg:p-4 transition-all duration-700 rounded-sm overflow-hidden min-h-[48px]
                 ${activeTab === item.id ? 'bg-accent-gold/[0.03]' : 'hover:bg-white/[0.02]'}`}
             >
               <div className={`absolute left-0 top-0 bottom-0 w-px bg-accent-gold transition-transform duration-700 ${activeTab === item.id ? 'scale-y-100' : 'scale-y-0'}`}></div>
@@ -143,7 +143,7 @@ const Dashboard = ({ onLogout }) => {
           )}
           <button 
             onClick={onLogout}
-            className="w-full py-3 lg:py-4 border border-border-blueprint text-inscription text-[8px] lg:text-[9px] hover:border-accent-crimson hover:text-accent-crimson transition-all duration-700 flex items-center justify-center gap-3 group"
+            className="w-full py-4 lg:py-4 border border-border-blueprint text-inscription text-[9px] lg:text-[9px] hover:border-accent-crimson hover:text-accent-crimson transition-all duration-700 flex items-center justify-center gap-3 group min-h-[48px]"
           >
             <Lock className="w-3 h-3 lg:w-3.5 lg:h-3.5 opacity-40 group-hover:opacity-100 transition-opacity" strokeWidth={1} /> 
             {!isSidebarCollapsed && 'Quarantine Node'}
@@ -169,8 +169,8 @@ const Dashboard = ({ onLogout }) => {
               <div className="text-inscription text-[8px] lg:text-[10px] text-white font-black tracking-wider lg:tracking-widest">Architect Omega</div>
               <div className="text-classified text-[7px] lg:text-[8px] text-accent-gold font-mono tracking-tighter hidden sm:block">Session Valid: 04:59:59</div>
             </div>
-            <div className="w-8 h-8 lg:w-10 lg:h-10 glass border-border-blueprint flex items-center justify-center group cursor-pointer hover:border-accent-gold transition-all duration-700 rounded-sm">
-              <Fingerprint className="w-4 h-4 lg:w-5 lg:h-5 text-dim group-hover:text-accent-gold transition-colors" strokeWidth={1} />
+            <div className="w-10 h-10 lg:w-10 lg:h-10 glass border-border-blueprint flex items-center justify-center group cursor-pointer hover:border-accent-gold transition-all duration-700 rounded-sm min-w-[44px] min-h-[44px]">
+              <Fingerprint className="w-5 h-5 lg:w-5 lg:h-5 text-dim group-hover:text-accent-gold transition-colors" strokeWidth={1} />
             </div>
           </div>
         </header>

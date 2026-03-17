@@ -57,7 +57,7 @@ const Archives = () => {
               <button
                 key={file.id}
                 onClick={() => setSelectedFile(file)}
-                className="w-full flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-6 p-3 sm:p-4 lg:p-6 bg-bg-obsidian border border-border-blueprint rounded-sm hover:bg-white/[0.01] hover:border-accent-gold/30 transition-all duration-[1s] group shadow-lg text-left"
+                className="w-full flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-6 p-4 sm:p-4 lg:p-6 bg-bg-obsidian border border-border-blueprint rounded-sm hover:bg-white/[0.01] hover:border-accent-gold/30 transition-all duration-[1s] group shadow-lg text-left min-h-[52px]"
                 style={{ animation: `reveal 0.5s ease forwards`, animationDelay: `${idx * 0.1}s`, opacity: 0 }}
               >
                 <div className="flex items-center gap-3 w-full sm:w-auto">
@@ -92,10 +92,10 @@ const Archives = () => {
             <div className="absolute top-0 left-0 w-1 h-full bg-accent-gold/20 scale-y-0 group-hover:scale-y-100 transition-transform duration-[1.5s]"></div>
             <h3 className="text-accent-gold font-mono text-[9px] sm:text-[10px] tracking-[0.4em] sm:tracking-[0.6em] uppercase font-black text-center">VAULT_UTILITIES</h3>
             <div className="space-y-3">
-              <button className="w-full py-3 sm:py-4 border border-border-blueprint text-inscription text-[9px] sm:text-[10px] hover:border-accent-gold hover:text-accent-gold transition-all duration-700 font-black tracking-[0.2em] sm:tracking-[0.3em] flex items-center justify-center gap-3">
+              <button className="w-full py-4 sm:py-4 border border-border-blueprint text-inscription text-[10px] sm:text-[10px] hover:border-accent-gold hover:text-accent-gold transition-all duration-700 font-black tracking-[0.2em] sm:tracking-[0.3em] flex items-center justify-center gap-3 min-h-[48px]">
                 <Search className="w-4 h-4" strokeWidth={1} /> NEURAL_SCAN
               </button>
-              <button className="w-full py-3 sm:py-4 border border-border-blueprint text-inscription text-[9px] sm:text-[10px] hover:border-accent-crimson hover:text-accent-crimson transition-all duration-700 font-black tracking-[0.2em] sm:tracking-[0.3em]">
+              <button className="w-full py-4 sm:py-4 border border-border-blueprint text-inscription text-[10px] sm:text-[10px] hover:border-accent-crimson hover:text-accent-crimson transition-all duration-700 font-black tracking-[0.2em] sm:tracking-[0.3em] min-h-[48px]">
                 CLEANSE_CACHE
               </button>
             </div>
@@ -118,7 +118,7 @@ const Archives = () => {
               </div>
               <button 
                 onClick={() => setSelectedFile(null)} 
-                className="px-4 sm:px-8 py-2 sm:py-3 border border-border-blueprint text-inscription text-[9px] sm:text-[10px] tracking-[0.2em] sm:tracking-[0.4em] font-black hover:border-accent-gold transition-all duration-700 shrink-0"
+                className="px-6 sm:px-8 py-3 sm:py-3 border border-border-blueprint text-inscription text-[10px] sm:text-[10px] tracking-[0.2em] sm:tracking-[0.4em] font-black hover:border-accent-gold transition-all duration-700 shrink-0 min-h-[44px]"
               >
                 CLOSE
               </button>
