@@ -65,22 +65,14 @@ const Dashboard = ({ onLogout }) => {
     <div className="h-screen h-[100dvh] bg-bg-void text-white flex overflow-hidden font-sans relative">
       <div className="absolute inset-0 geometric-grid opacity-[0.02] pointer-events-none"></div>
 
-      {/* Mobile Menu Button */}
-      <button 
-        className="fixed top-3 left-3 z-50 p-3 bg-bg-obsidian border border-border-blueprint rounded-sm lg:hidden hover:border-accent-gold transition-colors min-w-[48px] min-h-[48px] flex items-center justify-center"
-        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-      >
-        {isMobileMenuOpen ? <X className="w-5 h-5 text-accent-gold" /> : <Menu className="w-5 h-5 text-dim" />}
-      </button>
-
       {/* Mobile Overlay */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-30 lg:hidden" onClick={() => setIsMobileMenuOpen(false)} />
+        <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-40 lg:hidden" onClick={() => setIsMobileMenuOpen(false)} />
       )}
 
       {/* Sidebar */}
       <aside className={`
-        fixed lg:relative z-40 bg-bg-obsidian border-r border-border-blueprint transition-all duration-[1s] ease-[cubic-bezier(0.16,1,0.3,1)] flex flex-col h-full
+        fixed lg:relative z-50 bg-bg-obsidian border-r border-border-blueprint transition-all duration-[1s] ease-[cubic-bezier(0.16,1,0.3,1)] flex flex-col h-full
         ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
         ${isSidebarCollapsed ? 'lg:w-20 w-72' : 'w-72 lg:w-80'}
       `}>
@@ -96,12 +88,22 @@ const Dashboard = ({ onLogout }) => {
               </div>
             )}
           </div>
-          <button 
-            onClick={() => setIsSidebarCollapsed(!isSidebarCollapsed)}
-            className="p-2 hover:bg-white/5 rounded-full transition-colors opacity-30 hover:opacity-100 hidden lg:block"
-          >
-            <ChevronRight className={`w-4 h-4 transition-transform duration-700 ${isSidebarCollapsed ? 'rotate-0' : 'rotate-180'}`} strokeWidth={1} />
-          </button>
+          <div className="flex items-center gap-2">
+            {/* Close sidebar on mobile */}
+            <button 
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="p-2 hover:bg-white/5 rounded-sm transition-colors lg:hidden min-w-[44px] min-h-[44px] flex items-center justify-center"
+            >
+              <X className="w-5 h-5 text-accent-gold" />
+            </button>
+            {/* Collapse sidebar on desktop */}
+            <button 
+              onClick={() => setIsSidebarCollapsed(!isSidebarCollapsed)}
+              className="p-2 hover:bg-white/5 rounded-full transition-colors opacity-30 hover:opacity-100 hidden lg:block"
+            >
+              <ChevronRight className={`w-4 h-4 transition-transform duration-700 ${isSidebarCollapsed ? 'rotate-0' : 'rotate-180'}`} strokeWidth={1} />
+            </button>
+          </div>
         </div>
 
         <nav className="flex-1 overflow-y-auto overflow-x-hidden p-3 lg:p-4 space-y-1 lg:space-y-2 py-4 lg:py-6">
@@ -154,8 +156,15 @@ const Dashboard = ({ onLogout }) => {
       {/* Main Content */}
       <main className="flex-1 flex flex-col overflow-hidden relative w-full">
         {/* Top Header */}
-        <header className="h-14 lg:h-24 border-b border-border-blueprint bg-black/20 backdrop-blur-3xl px-4 pl-14 lg:pl-8 lg:px-12 flex items-center justify-between relative z-10 shrink-0">
-          <div className="flex items-center gap-4 lg:gap-10">
+        <header className="h-14 lg:h-24 border-b border-border-blueprint bg-black/20 backdrop-blur-3xl px-4 lg:px-12 flex items-center justify-between relative z-10 shrink-0">
+          <div className="flex items-center gap-3 lg:gap-10">
+            {/* Hamburger in header on mobile */}
+            <button 
+              className="p-2 border border-border-blueprint rounded-sm lg:hidden hover:border-accent-gold transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center shrink-0"
+              onClick={() => setIsMobileMenuOpen(true)}
+            >
+              <Menu className="w-5 h-5 text-dim" />
+            </button>
             <div className="hidden md:flex items-center gap-3 text-classified text-[8px] lg:text-[9px] font-black uppercase tracking-[0.3em] lg:tracking-[0.6em] opacity-20">
               <span>Root</span>
               <ChevronRight className="w-3 h-3" />
